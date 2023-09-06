@@ -132,6 +132,22 @@ function MyApp({ Component, pageProps }) {
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-qWPc8xQrA-D8TSiNBpjLYBBsS29oU0U&callback=Function.prototype"
           ></Script>
 
+          <Script type="text/javascript" async defer>
+            {`(function (c, l, a, r, i, t, y) {
+    c[a] =
+      c[a] ||
+      function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+
+    t = l.createElement(r);
+    t.async = 1;
+    t.src = "https://www.clarity.ms/tag/" + i;
+    y = l.getElementsByTagName(r)[0];
+    y.parentNode.insertBefore(t, y);
+       })(window, document, "clarity", "script", "iqfril3jex");`}
+          </Script>
+
           <AuthGuard settBtnRef={settBtnRef}>
             <ToastContainer
               position="top-center"
